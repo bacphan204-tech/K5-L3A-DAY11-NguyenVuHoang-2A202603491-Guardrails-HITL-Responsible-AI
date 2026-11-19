@@ -1,5 +1,18 @@
 # Day 11 — Controlled Agent Security (2026)
 
+**Học viên:** Nguyễn Vũ Hoàng · **MSSV:** 2A202603491 · **Lớp:** L3A
+
+Sau khi cài thư viện và điền key vào `.env`, chạy các lệnh sau từ thư mục gốc bằng PowerShell:
+
+```powershell
+.\.venv\Scripts\python.exe src/main.py --part 2
+.\.venv\Scripts\python.exe src/main.py --part 3
+.\.venv\Scripts\python.exe -m pytest tests/smoke tests/public -q
+.\.venv\Scripts\python.exe scripts/grade.py --submission-dir . --out outputs/grade_report.json
+```
+
+Kết quả phòng thủ và kết quả Red Team của lần chạy lab được lưu trong `outputs/`.
+
 > 👤 **Hình thức:** bài tập **cá nhân** (1 người / 1 MSSV).  
 > 🎯 **Mục tiêu:** đóng vai **Blue Team** để học cách xây Guardrails phòng thủ, rồi đóng vai **Red Team** để tấn công agent **Red** hoặc **Red Advance**.  
 > ✅ Làm theo **Checkpoint 1 → 5** trong [`CHECKPOINTS.md`](CHECKPOINTS.md) · nộp theo [`SUBMISSION.md`](SUBMISSION.md).
